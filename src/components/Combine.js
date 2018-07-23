@@ -1,12 +1,13 @@
-import React, { Components } from 'react';
+import React, { Component } from 'react';
 
-class Combine extends Components {
+class Combine extends Component {
 
     render() {
+        return(
         <div>
 
         </div>
-    }
+        )
 }
-
+}
 export default Combine;

@@ -1,11 +1,11 @@
 import React from 'react';
 import '../App.css';
 // import Coverflow from 'react-coverflow';
-import { StyleRoot } from 'radium';
+// import { StyleRoot } from 'radium';
 import Display from './Coverflow.js';
 import Navbar from './Navbar.js';
 import Jumbotron from './Jumbotron.js';
-import MoodSelector from './MoodSelector.js';
+import MoodSelector from './MoodSelected.js';
 import Carousels from './Carousels.js';
 import Combine from './Combine.js'
 import Calculation from './Calculation.js'
@@ -20,10 +20,10 @@ class App extends React.Component {
   render() {
     return (
         <div>
-          <Display />
           <Navbar/>
           <Jumbotron/>
           <MoodSelector/>
+          <Display />
           <Carousels/>
           <Combine/>
           <Calculation/>
