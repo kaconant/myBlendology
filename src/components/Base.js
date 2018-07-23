@@ -1,12 +1,13 @@
-import React, { Components } from 'react';
+import React, { Component } from 'react';
 
-class Base extends Components {
+class Base extends Component {
 
     render() {
+        return(
         <div>
 
         </div>
-    }
+        )
 }
-
+}
 export default Base;

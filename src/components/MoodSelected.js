@@ -1,11 +1,13 @@
-import React, { Components } from 'react';
+import React, { Component } from 'react';
 
-class MoodSelector extends Components {
+class MoodSelector extends Component {
 
     render() {
+        return(
         <div>
 
         </div>
+        )
     }
 }
 

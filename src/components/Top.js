@@ -1,12 +1,13 @@
-import React, { Components } from 'react';
+import React, { Component } from 'react';
 
-class Top extends Components {
+class Top extends Component {
 
     render() {
+        return (
         <div>
 
         </div>
-    }
+        )
 }
-
+}
 export default Top;

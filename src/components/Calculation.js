@@ -1,13 +1,14 @@
-import React, { Components } from 'react';
+import React, { Component } from 'react';
 import Oils from '../essentialOils.js'
 
-class Calculation extends Components {
+class Calculation extends Component {
 
     render() {
+        return (
         <div>
-        <Oils/>
+        {/* <Oils/> */}
         </div>
-    }
+        )
 }
-
+}
 export default Calculation;

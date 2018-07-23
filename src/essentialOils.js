@@ -109,8 +109,8 @@ const oils = {
     },
     mandarin: { 
         name: 'Mandarin',
-        desc: x,
-        mood: x,
+        desc: null,
+        mood: null,
         level: "top",
         pregnant: null,
         allergies: null,
