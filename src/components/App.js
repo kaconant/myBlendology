@@ -5,29 +5,36 @@ import '../App.css';
 import Display from './Coverflow.js';
 import Navbar from './Navbar.js';
 import Jumbotron from './Jumbotron.js';
-import MoodSelector from './MoodSelected.js';
 import Carousels from './Carousels.js';
-import Combine from './Combine.js'
 import Calculation from './Calculation.js'
 import Footer from './Footer.js';
-
 
 // Nav bar > Jumbotron > MoodSelector > Base > Middle > Top > Combine > Calculation > Footer
 // lets try to render with it all on one page and then break it out later
 
 class App extends React.Component {
 
+  handleMoodClick() {
+
+  };
+
+  handleClick() {
+
+  };
+
   render() {
     return (
         <div>
-          <Navbar/>
-          <Jumbotron/>
-          <MoodSelector/>
+          <Navbar />
+          <Jumbotron />
+          <MoodSelector handleMoodClick={handleMoodClick} />
           <Display />
-          <Carousels/>
-          <Combine/>
-          <Calculation/>
-          <Footer/>
+          <Carousels mood={this.state.mood} type="top" handleClick={handleClick} oils={oilsData} />
+          <Carousels mood={this.state.mood} type="middle" handleClick={handleClick} oils={oilsData} />
+          <Carousels mood={this.state.mood} type="base" handleClick={handleClick} oils={oilsData} />
+          <Combine />
+          <Calculation />
+          <Footer />
         </div>
     )
   }

@@ -11,6 +11,6 @@ class Oil extends Component {
             <Oils/>
         </div>
         )
-}
+    }
 }
 export default Oil;

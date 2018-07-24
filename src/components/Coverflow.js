@@ -4,11 +4,11 @@ import { EssentialOils } from '../essentialOils';
 
 class Cards extends React.Component {
   render() {
-    const cardData = EssentialOils();
+    const oilsData = EssentialOils();
     return (
       <section>
       {
-        cardData.map((card, i) => {
+        oilsData.map((card, i) => {
           return (
             <div className="card" id="card" style={this.props.cardStyle} key={i}>
               <p className="title">{card.name}</p>
