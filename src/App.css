@@ -105,6 +105,14 @@ li.nav-item  a.nav-link:hover {
     h4, h6, h3 {
         text-align: center;
       }
+      .main-col {
+        width: 25%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 18px;
+        padding: 0 10px 50px 10px;
+        text-align: center;
+        margin: 0px 25px;
+      }
 
       div.row.justify-content-center.info {
         padding: 0%;
@@ -178,6 +186,14 @@ li.nav-item  a.nav-link:hover {
 
     .at-login-form .modal-dialog {
         width: 300px !important;
+    }
+    .main-col {
+      width: 250px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 18px;
+      padding: 0 10px 50px 10px;
+      text-align: center;
+      margin: 0px 25px;
     }
 
     div.row.justify-content-center.info {
@@ -319,7 +335,7 @@ li.nav-item  a.nav-link:hover {
   
   div.msg-container {
     width: 100%;
-    background-image: url("./img/oils2.jpg");  
+    background-image: url("/img/oils2.jpg");  
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: right;
@@ -408,14 +424,7 @@ li.nav-item  a.nav-link:hover {
     padding-bottom: 40px;
   }
   
-  .main-col {
-    width: 300px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
-    padding: 0 10px 50px 10px;
-    text-align: center;
-    margin: 0px 25px;
-  }
+
   
   .info-header {
     display: block;
@@ -500,8 +509,8 @@ li.nav-item  a.nav-link:hover {
   }
   
   .slider-btn {
-    padding: 0;
-    font-size: 40px;
+    padding-bottom: 250px;
+    font-size: 50px;
     text-align: center;
     color: #b3b3b3;
     width: 45px;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../img/logo.png'
-import drop from '../img/drop.png'
+// import logo from '../img/logo.png'
+// import drop from '../img/drop.png'
 class Navbar extends Component {
 
     render() {
