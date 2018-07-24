@@ -304,7 +304,7 @@ export function EssentialOils() {
   { 
         name: 'Lavender',
         desc: 'This calming, relaxing essential oil, which combats stress and crisis, while the antiseptic properties helps with cold, flu and other ailments. It is excellent for asthma and migraines. Apart from that it supports female health and on the skin it has a healing effect, while preventing scarring and balancing the skin.',
-        url: './img/oil-img/lavender2.jpg',
+        url: './img/oil-img/lavender.jpg',
         mood: 'calm',
         level: "middle",
         pregnant: null,
@@ -344,7 +344,7 @@ export function EssentialOils() {
   { 
         name: 'Palma Rosa',
         desc: 'This sweet, floral essential oil is fast becoming a firm favorite in essential oil therapy and aromatherapy, as it has excellent skin care properties and is also used to relieve stiff and sore muscles, while calming the mind and uplifting and invigorating the spirits and clearing muddled thinking.',
-        url: './img/oil-img/palma-rosa.jpg',
+        url: './img/oil-img/palmaRosa.jpg',
         mood: 'awaken',
         level: "middle",
         pregnant: null,
@@ -524,7 +524,7 @@ export function EssentialOils() {
    { 
         name: 'Ylang Ylang',
         desc: 'This extremely fragrant essential oil has a calming effect on the mind and body and is used in cases of frigidity and impotence. It has a wonderfully balancing and stimulating effect on the skin, to correct sebum production and is also used to stimulate hair growth.',
-        url: './img/oil-img/ylang-ylang.jpg',
+        url: './img/oil-img/ylangYlang.jpg',
         mood: 'sensual',
         level: "base",
         pregnant: null,

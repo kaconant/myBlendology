@@ -240,7 +240,6 @@ li.nav-item  a.nav-link:hover {
     margin-top: 4px;
   }
 
-  
   .navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 4px);
     transition: ease all .2s;
@@ -259,13 +258,12 @@ li.nav-item  a.nav-link:hover {
   .icon-bar {
     background-color:rgb(65, 63, 102) !important;
     height: 2px;
- }
+  }
   
   div.col-md-12 {
       padding: 0;
       margin:0;
   }
-
 
   
   /* Hang */
@@ -452,10 +450,6 @@ li.nav-item  a.nav-link:hover {
     display: flex;
   }
   
-  
-  
-  
-  
   .cards-slider {
     overflow: hidden;
     white-space: nowrap;
@@ -542,8 +536,3 @@ li.nav-item  a.nav-link:hover {
   .btn-l {
     left: 0px;
   }
-  
-  
-  
-  
-
