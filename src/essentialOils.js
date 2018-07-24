@@ -254,6 +254,7 @@ const oils = {
     geranium: { 
         name: 'Geranium',
         desc: 'This fresh essential oil has a firm place in aromatherapy, as it helps to balance the mind and emotions, while stimulating the adrenal cortex and balancing the hormonal system and stimulating the lymphatic system. On the other hand, it balances the production of sebum in the skin, while keeping it supple and helping with the healing of wounds.',
+        url: './img/oil-img/geranium.jpg',
         mood: 'awaken',
         level: "middle",
         pregnant: null,
@@ -263,6 +264,7 @@ const oils = {
     hyssop: { 
         name: 'Hyssop',
         desc: 'This sweet, warm essential oil is effective in helping to treat female disorders and to relieve monthly water retention, while being excellent to help the respiratory system get rid of mucus and bronchial spasms. It can be used to treat bronchitis, asthma, influenza and colds, while helping wounds heal and dispersing bruises on the skin.',
+        url: './img/oil-img/hyssop.jpg',
         mood: 'calm',
         level: "middle",
         pregnant: null,
@@ -272,6 +274,7 @@ const oils = {
     juniper: { 
         name: 'Juniper',
         desc: 'This crisp essential oil is used in aromatherapy to help stimulate and strengthen the nerves and bolster the spirits in challenging situations, while helping to relieve urine retention. It is used for treating rheumatism, arthritis and gout, as well as cellulite, acne, dermatitis, blocked pores, psoriasis and weeping eczemas.',
+        url: './img/oil-img/juniper.jpg',
         mood: 'awaken',
         level: "middle",
         pregnant: null,
@@ -281,6 +284,7 @@ const oils = {
     lavender: { 
         name: 'Lavender',
         desc: 'This calming, relaxing essential oil, which combats stress and crisis, while the antiseptic properties helps with cold, flu and other ailments. It is excellent for asthma and migraines. Apart from that it supports female health and on the skin it has a healing effect, while preventing scarring and balancing the skin.',
+        url: './img/oil-img/lavender.jpg',
         mood: 'calm',
         level: "middle",
         pregnant: null,
@@ -290,6 +294,7 @@ const oils = {
     majoram: { 
         name: 'Marjoram',
         desc: 'This warm, slightly-spicy essential oil has value when used for asthma and other respiratory complaints and has a calming action on emotions. It helps hyperactive people calm down while boosting circulation.',
+        url: './img/oil-img/majoram.jpg',
         mood: 'calm',
         level: "middle",
         pregnant: null,
@@ -299,6 +304,7 @@ const oils = {
     melissa: { 
         name: 'Melissa',
         desc: 'This sweet, citrus-like essential oil has a couple of uses in aromatherapy and helps to bring calmness to the mind, while having a great sedating effect, calming the heartbeat and palpitations.',
+        url: './img/oil-img/melissa.jpg',
         mood: 'calm',
         level: "middle",
         pregnant: null,
@@ -308,6 +314,7 @@ const oils = {
     nutmeg: { 
         name: 'Nutmeg',
         desc: 'This warming, spicy essential oil is used in aromatherapy to fight inflammations and muscle as well as rheumatic pain, while assisting the digestive system and supporting the reproductive system, and at the same time stimulating and invigorating the mind.',
+        url: './img/oil-img/nutmeg.jpg',
         mood: 'sensual',
         level: "middle",
         pregnant: null,
@@ -317,6 +324,7 @@ const oils = {
     palmaRosa: { 
         name: 'Palma Rosa',
         desc: 'This sweet, floral essential oil is fast becoming a firm favorite in essential oil therapy and aromatherapy, as it has excellent skin care properties and is also used to relieve stiff and sore muscles, while calming the mind and uplifting and invigorating the spirits and clearing muddled thinking.',
+        url: './img/oil-img/palmaRosa.jpg',
         mood: 'awaken',
         level: "middle",
         pregnant: null,
@@ -326,6 +334,7 @@ const oils = {
     pine: { 
         name: 'Pine',
         desc: 'Although this forest-smelling essential oil can cause allergic reactions, it is very useful to relieve mental, physical and sexual fatigue, while having a cleansing and clearing effect on a room.',
+        url: './img/oil-img/pine.jpg',
         mood: 'awaken',
         level: "middle",
         pregnant: null,
@@ -335,6 +344,7 @@ const oils = {
     rosemary: { 
         name: 'Rosemary',
         desc: 'This crisp and clean smelling essential oil is great for stimulating the brain, improving memory and mental clarity, while helping with a variety of congested respiratory tract problems, stiff muscles, coldness as well as boosting the liver and gall bladder. It is also used for improving hair and scalp health.',
+        url: './img/oil-img/rosemary.jpg',
         mood: 'awaken',
         level: "middle",
         pregnant: null,
@@ -344,6 +354,7 @@ const oils = {
     spikenard: { 
         name: 'Spikenard',
         desc: 'This warm, misty essential oil can be effective for tension, stress, migraine, nervous indigestion and insomnia. It can help with rejuvenating mature skin, allergies, skin inflammations and rashes.',
+        url: './img/oil-img/spikenard.jpg',
         mood: 'calm',
         level: "middle",
         pregnant: null,
@@ -353,6 +364,7 @@ const oils = {
     yarrow: { 
         name: 'Yarrow',
         desc: 'This sweet, spicy essential oil can be beneficial to the nervous, genito-urinary and digestive systems, and can assist with skin care.',
+        url: './img/oil-img/yarrow.jpg',
         mood: 'awaken',
         level: "middle",
         pregnant: null,
@@ -362,6 +374,7 @@ const oils = {
     cassia: { 
         name: 'Cassia',
         desc: 'This warm, exotic essential oil is more than just a fragrant oil, as it can be used in fever, chills and for supporting the digestive system.',
+        url: './img/oil-img/cassia.jpg',
         mood: 'calm',
         level: "base",
         pregnant: null,
@@ -371,6 +384,7 @@ const oils = {
     cedarwood: { 
         name: 'Cedarwood',
         desc: 'This clean smelling, balsamic essential oil does not only help calm and balance energy, but also promotes spirituality, while helping to clear the respiratory system of excess phlegm and catarrh. It sorts out urinary tract infections, as well as bladder and kidney disorders, while improving oily skin and clearing up dandruff.',
+        url: './img/oil-img/cedarwood.jpg',
         mood: 'calm',
         level: "base",
         pregnant: null,
@@ -380,6 +394,7 @@ const oils = {
     clove: { 
         name: 'Clove',
         desc: 'Although this warm, spicy essential oil is a very potent oil that should be used with great care in aromatherapy, it does have wonderful properties - from stimulating the mind and lifting depression, to aiding digestion, relieving pain in arthritis and rheumatism, easing respiratory problems and assisting leg ulcers.',
+        url: './img/oil-img/clove.jpg',
         mood: 'awaken',
         level: "base",
         pregnant: null,
@@ -389,6 +404,7 @@ const oils = {
     frankincense: { 
         name: 'Frankincense',
         desc: 'This woody, spicy essential oil has a wonderfully calming effect on the mind and helps to create inner peace, while helping to sooth the respiratory and urinary tract and relieve pain associated with rheumatism and muscular aches, while having a rejuvenating, balancing and healing action on the skin.',
+        url: './img/oil-img/frankincense.jpg',
         mood: 'calm',
         level: "base",
         pregnant: null,
@@ -398,6 +414,7 @@ const oils = {
     ginger: { 
         name: 'Ginger',
         desc: 'This spicy, warming essential oil is often used for digestive problems, as well as nausea - be that morning sickness or travel upset. It is also of value when treating colds and flu and especially for catarrhal lung conditions and rheumatic pain. It can also be used on the skin to help clear bruises.',
+        url: './img/oil-img/ginger.jpg',
         mood: 'awaken',
         level: "base",
         pregnant: null,
@@ -407,6 +424,7 @@ const oils = {
     jasmine: { 
         name: 'Jasmine',
         desc: 'This sweet, exotic, and richly floral essential oil does more than just smell exquisite - it deeply relaxes, lifts depression and boosts confidence, eases childbirth, helps with sexual problems, sooths coughing and tones and improves skin elasticity, while helping to reduce stretch marks and scars.',
+        url: './img/oil-img/jasmine.jpg',
         mood: 'sensual',
         level: "base",
         pregnant: null,
@@ -416,6 +434,7 @@ const oils = {
     myrrh: { 
         name: 'Myrrh',
         desc: 'If you talk about a magical essential oil in aromatherapy, then this warm, slightly-musty oil must surely be it, as it not only works on increasing your spiritual self, but produce wonderful results when used to treat female complaints, skin ailments, as well as detoxifying the body and expelling mucus and phlegm from the body.',
+        url: './img/oil-img/myrrh.jpg',
         mood: 'awaken',
         level: "base",
         pregnant: null,
@@ -425,6 +444,7 @@ const oils = {
     patchouli: { 
         name: 'Patchouli',
         desc: 'This rich, musky-sweet essential oil is great for fighting depression and anxiety. It has great diuretic properties and also helps break down cellulite, while stimulating the regeneration of skin cells, speeding up healing and preventing ugly scars forming when wounds heal.',
+        url: './img/oil-img/patchouli.jpg',
         mood: 'calm',
         level: "base",
         pregnant: null,
@@ -434,6 +454,7 @@ const oils = {
     rose: { 
         name: 'Rose',
         desc: 'This deep, fresh aroma essential oil is useful for lifting depression, fighting frigidity and impotence and for skin rejuvenation. It has excellent cell stimulant and tissue regeneration properties, making it a valuable ingredient in mature skin care.',
+        url: './img/oil-img/rose.jpg',
         mood: 'awaken',
         level: "base",
         pregnant: null,
@@ -443,6 +464,7 @@ const oils = {
     rosewood: { 
         name: 'Rosewood',
         desc: 'This slightly spicy, floral essential oil is useful for lifting depression, fighting frigidity and impotence and for skin rejuvenation. It has excellent cell stimulant and tissue regeneration properties, making it a valuable ingredient in mature skin care.',
+        url: './img/oil-img/rosewood.jpg',
         mood: 'awaken',
         level: "base",
         pregnant: null,
@@ -452,6 +474,7 @@ const oils = {
     sandalwood: { 
         name: 'Sandalwood',
         desc: 'This woody, exotic essential oil has wonderful qualities for relieving both chest and urinary tract infections, while assisting the skin in promoting hydration and moisture and for the mind it creates a calming and harmonizing effect, while reducing tension and confusion.',
+        url: './img/oil-img/sandalwood.jpg',
         mood: 'sensual',
         level: "base",
         pregnant: null,
@@ -461,6 +484,7 @@ const oils = {
     vanilla: { 
         name: 'Vanilla',
         desc: 'This aromatic essential oil has strong effects on the mind and body and is used to fight inflammation, works as an antidepressant, contains high levels of antioxidants, promotes skin and hair health, relieves muscle pain and cramps, and balances hormones naturally.',
+        url: './img/oil-img/vanilla.jpg',
         mood: 'sensual',
         level: "base",
         pregnant: null,
@@ -470,6 +494,7 @@ const oils = {
     vetiver: { 
         name: 'Vetiver',
         desc: 'This earthy essential oil has a wonderful effect on the mind and body and is useful to dispel irritability, anger and hysteria, while having a balancing effect on the hormonal system and is a great boon for the skin. It is used to reduce wrinkles and stretch marks while nourishing and moisturizing the skin and helping wounds heal.',
+        url: './img/oil-img/vetiver.jpg',
         mood: 'calm',
         level: "base",
         pregnant: null,
@@ -479,6 +504,7 @@ const oils = {
     ylangYlang: { 
         name: 'Ylang Ylang',
         desc: 'This extremely fragrant essential oil has a calming effect on the mind and body and is used in cases of frigidity and impotence. It has a wonderfully balancing and stimulating effect on the skin, to correct sebum production and is also used to stimulate hair growth.',
+        url: './img/oil-img/ylangYlang.jpg',
         mood: 'sensual',
         level: "base",
         pregnant: null,
