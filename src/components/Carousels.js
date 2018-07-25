@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-
+import Oil from './Oil.js'
 class Carousels extends Component {
 
     render() {
         return(
         <div>
-            {this.props.oils.filter((oil) => {
-                if (oil.level === this.props.type) {
+            {this.state.oilData.filter((eachOil) => {
+                if (eachOil.level === this.props.level) {
                     return (
-                        <Oil oil={oil} />
+                        <Oil eachOil={eachOil} />
                     )
                 }
             })}
