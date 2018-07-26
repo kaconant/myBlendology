@@ -34,6 +34,7 @@ class Carousels extends Component {
       // let boxWidth = document.getElementById("card").clientWidth;
       this.setState({ width: 300 })
     }
+  
     // func: click the slider buttons
     handleClick(type) {
       // get the card's margin-right
@@ -70,21 +71,19 @@ class Carousels extends Component {
     render() { 
         return (
             <div id="base">
-            {this.props.toShow === true && <div className="info-label">{this.state.infoLabel}</div>}
-            {this.props.toShow === true && <div className="info-blurb-level">{this.state.infoBlurb}</div>}
-          <div className="cards-slider">
+              {this.props.toShow === true && <div className="info-label">{this.state.infoLabel}</div>}
+              {this.props.toShow === true && <div className="info-blurb-level">{this.state.infoBlurb}</div>}
+               <div className="cards-slider">
 
-            <div className="slider-btns">
-              <button className="slider-btn btn-l" onClick={() => this.handleClick('prev')}>&lt;</button>
-              <button className="slider-btn btn-r" onClick={() => this.handleClick('next')}>&gt;</button>
+                <div className="slider-btns">
+                  <button className="slider-btn btn-l" onClick={() => this.handleClick('prev')}>&lt;</button>
+                  <button className="slider-btn btn-r" onClick={() => this.handleClick('next')}>&gt;</button>
+                </div>
+                <Cards cardStyle={this.state.cardStyle} currentLevel={this.props.currentLevel} />
+              </div>
             </div>
-            <Cards cardStyle={this.state.cardStyle} currentLevel={this.props.currentLevel} />
-          </div>
-          </div>
-        )   
-    }
+          )   
+      }
 }
-  
-
 
 export default Carousels;
