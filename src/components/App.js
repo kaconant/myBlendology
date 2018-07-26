@@ -9,7 +9,6 @@ import { EssentialOils } from '../essentialOils';
 
 // Nav bar > Jumbotron > MoodSelector > Base > Middle > Top > Combine > Calculation > Footer
 // lets try to render with it all on one page and then break it out later
-
 class App extends React.Component {
 
   constructor() {
@@ -22,10 +21,8 @@ class App extends React.Component {
         oilData: [],
         currentLevel: null
     }
-
     this.handleMoodClick = this.handleMoodClick.bind(this);
-
-}
+  }
 
   handleMoodClick(e) {
     this.setState({
@@ -60,14 +57,22 @@ class App extends React.Component {
 
 
   render() {
-
     return (
         <div>
           <Navbar />
           <Jumbotron handleMoodClick={this.handleMoodClick} />
-          <Carousels mood={this.state.mood} levelLabel="base" currentLevel={this.state.baseLevel}/>
-          <Carousels mood={this.state.mood} levelLabel="middle" currentLevel={this.state.midLevel}/>
-          <Carousels mood={this.state.mood} levelLabel="top" currentLevel={this.state.topLevel}/>
+          <Carousels 
+            mood={this.state.mood} 
+            levelLabel="base" 
+            currentLevel={this.state.baseLevel}/>
+          <Carousels 
+            mood={this.state.mood} 
+            levelLabel="middle" 
+            currentLevel={this.state.midLevel}/>
+          <Carousels 
+            mood={this.state.mood} 
+            levelLabel="top" 
+            currentLevel={this.state.topLevel}/>
           <Calculation />
           <Footer />
         </div>

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-
 class Jumbotron extends Component {
 
-    render(props) {
+    render() {
         return(
         <div>
             <div className="container-fluid msg-container">
