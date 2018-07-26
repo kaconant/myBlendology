@@ -3,20 +3,11 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-size: 13px;
-  background-color: #e2dfe2;
+  /* background-color: #615f77; */
+  /* background-color: #818199; */
+  background-color: #f0ebf1;
   height: 100%;
   color: rgb(63, 63, 97);
-}
-
-/* div.container {
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-} */
-
-div.col-sm-2, div.col-sm-3, div.col-sm-1, div.col-sm-4 {
-    padding: 10px;
-    text-align: center;
 }
 
 li.nav-item  a.nav-link:focus {
@@ -41,26 +32,7 @@ li.nav-item  a.nav-link:hover {
     transform: scaleX(1);
   }
 
-/* li.nav-item  a.nav-link:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #7a9273;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  } */
-
   @media (min-width: 451px){
-    /* .slider-btn {
-      padding-bottom: 250px;
-    } */
-
     .arrow {
       position: relative;
       top: 96px;
@@ -91,9 +63,7 @@ li.nav-item  a.nav-link:hover {
     }
 
     h4 {
-        font-size: 58px;
-        /* color: whitesmoke !important; */
-        
+        font-size: 58px; 
     }
 
     div.headline {
@@ -117,29 +87,24 @@ li.nav-item  a.nav-link:hover {
         text-align: center;
         margin: 0px 25px;
       }
-
+      
       div.row.justify-content-center.info {
         padding: 0%;
         margin: 0%;
-        margin-bottom: 260px;
         position: relative;
         top: 770px;
         display: flex;
       }
-      .cards-slider {
-        /* padding-top: 260px; */
-        background-color: #f9f4f8;
+      .buffer {
+        padding-top: 300px;
       }
 }
 
 @media screen and (min-width: 0px) and (max-width: 450px){
-  /* .slider-btn {
-    padding-bottom: 700px;
-  } */
+
   .arrow {
     position: relative;
     top: 60px;
-    /* left: 4%; */
   }
 
     img.logo {
@@ -178,23 +143,11 @@ li.nav-item  a.nav-link:hover {
         margin-bottom: 20px !important;
     }
 
-    a.transparent_btn {
-        /* background-color: #2208297e !important;
-        color: rgba(245, 245, 245, 0.808) !important; */
-    }
-
-    a.transparent_btn:hover {
-        /* background-color: #542b5f63 !important; */
-        /* color: #371141 !important; */
-    }
     
       #myFooter {
         text-align: center;
     }
 
-    .at-login-form .modal-dialog {
-        width: 300px !important;
-    }
     .main-col {
       width: 250px;
       font-family: 'Josefin Sans', sans-serif;
@@ -207,15 +160,16 @@ li.nav-item  a.nav-link:hover {
     div.row.justify-content-center.info {
       padding: 0%;
       margin: 0%;
-      margin-bottom: 700px;
+      /* margin-bottom: 700px; */
       position: relative;
       top: 650px;
       display: flex;
+      flex-direction: column;
     }
-    .cards-slider {
-      /* padding-top: 700px; */
-      background-color: #f9f4f8;
+    .buffer {
+      padding-top: 780px;
     }
+    
 }
 
 .navbar {
@@ -269,10 +223,10 @@ li.nav-item  a.nav-link:hover {
     height: 2px;
   }
   
-  div.col-md-12 {
+  /* div.col-md-12 {
       padding: 0;
       margin:0;
-  }
+  } */
 
   
   /* Hang */
@@ -364,7 +318,6 @@ li.nav-item  a.nav-link:hover {
   
   h3 {
     color: #886c91e5;
-    /* font-family: 'Josefin Sans', sans-serif; */
     font-weight: 400;
     font-size: 25px;
     padding: 7px 60px;
@@ -372,19 +325,14 @@ li.nav-item  a.nav-link:hover {
   
   h4 {
     color: rgb(58, 51, 85);
-    /* font-family: 'Josefin Sans', sans-serif; */
     font-family: 'Julius Sans One', sans-serif;
     font-weight: 700;
-    /* background-color: rgb(250, 248, 250, 0.3); */
     padding: 0px 60px 25px 35px;
   }
   
   .transparent_btn {
-    /* display: inline-block; */
     position: relative;
     top: 10px;
-    /* left: 50%; */
-    /* right: 50%; */
     width: 200px;
     height: 48px;
     padding: 14px 35px 12px 35px;
@@ -402,60 +350,35 @@ li.nav-item  a.nav-link:hover {
     font-weight: 600;
     font-size: 16px;
     margin: 20px 35px;
-    /* margin-left: 300px; */
-    /* position: absolute; */
-    /* right: 60px;
-    top: 420px; */
   }
-  
-  /* a.transparent_btn {
-    background-color: #2208297e !important;
-    color: rgba(245, 245, 245, 0.808) !important;
-  } */
-  
+
   a.transparent_btn:hover {
     background-color: rgba(88, 109, 50, 0.863);
     text-decoration: none;
     color: whitesmoke;
-    /* padding: 9px 35px 12px 35px; */
-    /* font-size: 18px; */
-    /* transition: font-size ease .5s; */
-    /* transition: padding ease .8s; */
   }
-  
-  .main {
-    /* display: flex; */
-    justify-content: center;
-    align-content: space-around;
-    width: 100%;
-    padding-bottom: 40px;
-  }
-  
-
   
   .info-header {
     display: block;
     font-size: 24px;
     padding: 10px;
+    /* color: rgb(241, 238, 241); */
+    /* font-family: 'Syncopate', sans-serif; */
+    /* font-family: 'Julius Sans One', sans-serif; */
   }
   
   .info-blurb {
     font-size: 14px;
+    /* color: rgb(241, 238, 241); */
   }
+
   
-  /* div.row.justify-content-center.info {
-    padding: 0%;
-    margin: 0%;
-    position: relative;
-    top: 600px;
-    display: flex;
-  } */
+  
   
   div.row.justify-content-center.buttons {
     padding: 0%;
     margin: 0%;
     position: relative;
-    /* top: 600px; */
     display: flex;
   }
   
@@ -466,35 +389,52 @@ li.nav-item  a.nav-link:hover {
     height: 100%;
     position: relative;
     display: inline-block;
-    background: transparent;
-    margin: 5px 0;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin: 0px;
+    padding: 0px 50px 20px 50px;
   }
   
+  div.info-blurb-level {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    padding: 10px 50px;
+    color: rgba(132, 153, 104, 0.87);
+  }
+
+  .info-label {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 20px;
+    padding: 10px 50px 0 50px;
+    border-top: 1px solid rgba(113, 109, 146, 0.322);
+  }
+
   .card {
     float: left !important;
     text-align: left;
-    background: #fff;
-    width: 300px;
-    max-width: 300px !important;
+    background: rgba(255, 255, 255, 0.945);
+    width: 250px;
+    max-width: 250px !important;
     position: relative;
     display: inline-block;
     left: 0;
     clear: both;
-    margin-right: 10px;
+    margin-right: 20px;
     float: none !important;
     transition: transform .2s ease-in-out;
     vertical-align: top;
-    padding: 20px 25px;
-    height: 490px;
-    font-family: "Josefin Sans", sans-serif;
+    height: 540px;
+    background-position: center;
+    border: 0px solid rgba(159, 132, 175, 0.24);
   }
   
+
   .card .title {
     font-weight: 600;
-    font-size: 18px;
-    border-bottom: 1px solid #D8D8D8;
+    font-size: 22px;
+    font-family: 'Julius Sans One', sans-serif;
+    border-bottom: 1px solid rgb(141, 153, 121);
+    padding: 10px;
   }
   
   .card .desc {
@@ -503,6 +443,8 @@ li.nav-item  a.nav-link:hover {
     white-space: -moz-pre-wrap;
     white-space: pre-wrap;
     height: 180px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px 15px 0 10px;
   }
   
   .card img {
@@ -510,14 +452,39 @@ li.nav-item  a.nav-link:hover {
     position: relative;
     width: 100%;
   }
+
+  .card div.check {
+    display: flex; 
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 190px;
+    top: 20px;
+    background-image: url('/img/check.png');
+    background-position: center;
+    background-size: 100%;
+    margin: 0px;
+  }
   
+  .card div.check:hover {
+    display: flex; 
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 190px;
+    top: 20px;
+    background-image: url('/img/green-check.png');
+    background-position: center;
+    background-size: 100%;
+    margin: 0px;
+  }
+
   .slider-btn {
-    /* padding-bottom: 250px; */
     font-size: 50px;
     text-align: center;
     color: #b3b3b3;
     width: 45px;
-    height: 100%;
+    height: 540px;
     border: 0;
     cursor: pointer;
     background: rgba(245, 245, 245, 0.575);
@@ -534,7 +501,6 @@ li.nav-item  a.nav-link:hover {
   }
   
   .slider-btn:focus {
-    /* background: rgba(0,0,0,0.2); */
     outline: none;
     box-shadow: none;
   }
@@ -545,3 +511,117 @@ li.nav-item  a.nav-link:hover {
   .btn-l {
     left: 0px;
   }
+
+
+
+
+  #myFooter {
+    background-color: #363650;
+    color: dimgray;
+    padding-top: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    /* margin-top: 20px; */
+}
+
+#myFooter .footer-copyright {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+#myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+}
+
+#myFooter img {
+  margin-top: 45px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: #4d4d66;
+    border-radius: 0px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}

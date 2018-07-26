@@ -6,10 +6,6 @@ class Cards extends React.Component {
   }
   handleBaseOilClick(e) {
     e.preventDefault();
-    // let oilList = EssentialOils();
-    // let baseOilList = oilList.filter((oil) =>{
-    //   oil.level = 'base'
-    // })
     this.setState({ 
         baseLevel: e.currentTarget.dataset.name
 
@@ -40,19 +36,20 @@ class Cards extends React.Component {
     let oilsArray = this.props.currentLevel;
       return (
         <section>
-        {
+          {
           oilsArray.map((card, i) => {
+            let url = card.url
             return (
-              <div className="card" id="card" data-name={card.name} style={this.props.cardStyle} onClick={this.handleBaseOilClick.bind(this)}key={i}>
+              <div className="card" id="card" data-name={card.name}  style={this.props.cardStyle} onClick={this.handleBaseOilClick.bind(this)}key={i}>
+                <a href="#"><img className="oil-photo" src={card.url} height='200' /></a>
                 <p className="title">{card.name}</p>
                 <p className="desc">{card.desc}</p>
-                <a href="#"><img src={card.url} height='200' /></a>
+                <a href="#"><div className="check"></div></a>
               </div>
             )
           })
-        }
+          }
         </section>
-
       )
     }
   }

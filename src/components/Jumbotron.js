@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class Jumbotron extends Component {
 
-    render(props) {
+    render() {
         return(
         <div>
             <div className="container-fluid msg-container">
@@ -11,9 +11,9 @@ class Jumbotron extends Component {
                 <h4>your oils. our recipes.</h4>  
                 <h6>what's your vibe today?</h6>
                 <div className="row flex-row justify-content-center buttons">
-                  <a href="#" onClick={this.props.handleMoodClick} className="transparent_btn" data-toggle="modal" data-target="#at-signup" data-mood="calm">CALM</a>
-                  <a href="#" onClick={this.props.handleMoodClick} className="transparent_btn" data-toggle="modal" data-target="#at-signup" data-mood="awaken">AWAKEN</a>
-                  <a href="#" onClick={this.props.handleMoodClick} className="transparent_btn" data-toggle="modal" data-target="#at-signup" data-mood="sensual">SENSUAL</a>
+                  <a href="#base" onClick={this.props.handleMoodClick} className="transparent_btn"  data-target="#base" data-mood="calm">CALM</a>
+                  <a href="#base" onClick={this.props.handleMoodClick} className="transparent_btn"  data-target="#base" data-mood="awaken">AWAKEN</a>
+                  <a href="#base" onClick={this.props.handleMoodClick} className="transparent_btn"  data-target="#base" data-mood="sensual">SENSUAL</a>
                 </div>
                 <img className="arrow" src="./img/down-arrow.png" width="40"/>
               </div>

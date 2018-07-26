@@ -11,13 +11,29 @@ class Carousels extends Component {
         },
         width: 0,
       };
+
+      var infoLabel = " "
+      var infoBlurb = " "
+      if (this.props.levelLabel === "base") {
+        infoLabel = `Choose your ${this.props.mood} base oil:`
+        infoBlurb = "Base oils provide the lasting impression of your blend. These oils are typically heavy and will provide the final note of your blend."
+    } else if (this.props.levelLabel === "middle") {
+        infoLabel = `Choose your ${this.props.mood} middle oil:`
+        infoBlurb = "Middle oils are considered the heart of your blend and will emerge after your top oil has faded. These oils often balance your blend and are typically well-rounded."
+    } else if (this.props.levelLabel === "top") {
+        infoLabel = `Choose your ${this.props.mood} top oil:`
+        infoBlurb = "Top oils provide your first impression of your blend. These oils are often described as light and fresh, but tend to fade quickly."
+      }
+
+      this.state.infoLabel = infoLabel
+      this.state.infoBlurb = infoBlurb
     }
+
   
     componentDidMount() {
       // let boxWidth = document.getElementById("card").clientWidth;
-      this.setState({ width: 200 });
-    
-  }
+      this.setState({ width: 300 })
+    }
     // func: click the slider buttons
     handleClick(type) {
       // get the card's margin-right
@@ -51,33 +67,22 @@ class Carousels extends Component {
       })
     }
   
-    render() {
-      var infoLabel = " "
-      if (this.props.levelLabel === "base") {
-        infoLabel = "Choose your base:"
-      } else if (this.props.levelLabel === "middle") {
-        infoLabel = "Choose your middle:"
-      } else if (this.props.levelLabel === "top") {
-        infoLabel = "Choose your top:"
-      }
-  
-      if (this.props.currentLevel === null) {
-        console.log('triggered')
-        return ;
-      } else {
-        console.log('triggered2')
-      return (
-        <div className="cards-slider">
-          <span>{infoLabel}</span>
-          <div className="slider-btns">
-            <button className="slider-btn btn-l" onClick={() => this.handleClick('prev')}>&lt;</button>
-            <button className="slider-btn btn-r" onClick={() => this.handleClick('next')}>&gt;</button>
+    render() { 
+        return (
+            <div id="base">
+            {this.props.toShow === true && <div className="info-label">{this.state.infoLabel}</div>}
+            {this.props.toShow === true && <div className="info-blurb-level">{this.state.infoBlurb}</div>}
+          <div className="cards-slider">
+
+            <div className="slider-btns">
+              <button className="slider-btn btn-l" onClick={() => this.handleClick('prev')}>&lt;</button>
+              <button className="slider-btn btn-r" onClick={() => this.handleClick('next')}>&gt;</button>
+            </div>
+            <Cards cardStyle={this.state.cardStyle} currentLevel={this.props.currentLevel} />
           </div>
-          <Cards cardStyle={this.state.cardStyle} currentLevel={this.props.currentLevel} />
-        </div>
-      )
+          </div>
+        )   
     }
-  }
 }
   
 
