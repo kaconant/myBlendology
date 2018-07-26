@@ -18,8 +18,8 @@ class App extends React.Component {
         baseLevel: [], 
         midLevel: [], 
         topLevel: [],
-        oilData: [],
-        currentLevel: null
+        oilData: EssentialOils(),
+        toShow: false
     }
     this.handleMoodClick = this.handleMoodClick.bind(this);
   }
@@ -39,21 +39,21 @@ class App extends React.Component {
       })
       this.setState({ 
         baseLevel: baseOilList, 
-        currentLevel: true, 
         midLevel: midOilList, 
-        topLevel: topOilList
+        topLevel: topOilList,
+        toShow: true 
       }, function () {
         console.log(this.state.mood)
       })
   })
   }
 
-  componentDidMount() {
-    let oilData = EssentialOils();
-    this.setState({
-      oilData
-    })
-  }
+  // componentDidMount() {
+  //   let oilData = EssentialOils();
+  //   this.setState({
+  //     oilData
+  //   })
+  // }
 
 
   render() {
@@ -61,18 +61,10 @@ class App extends React.Component {
         <div>
           <Navbar />
           <Jumbotron handleMoodClick={this.handleMoodClick} />
-          <Carousels 
-            mood={this.state.mood} 
-            levelLabel="base" 
-            currentLevel={this.state.baseLevel}/>
-          <Carousels 
-            mood={this.state.mood} 
-            levelLabel="middle" 
-            currentLevel={this.state.midLevel}/>
-          <Carousels 
-            mood={this.state.mood} 
-            levelLabel="top" 
-            currentLevel={this.state.topLevel}/>
+          {this.state.currentLevel !== null && <div className="buffer"></div>}
+          {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="base" currentLevel={this.state.baseLevel} toShow={this.state.toShow} />}
+          {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="middle" currentLevel={this.state.midLevel} toShow={this.state.toShow} />}
+          {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="top" currentLevel={this.state.topLevel} toShow={this.state.toShow} />}
           <Calculation />
           <Footer />
         </div>
