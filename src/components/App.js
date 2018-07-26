@@ -1,8 +1,5 @@
 import React from 'react';
 import '../App.css';
-// import Coverflow from 'react-coverflow';
-// import { StyleRoot } from 'radium';
-import Display from './Coverflow.js';
 import Navbar from './Navbar.js';
 import Jumbotron from './Jumbotron.js';
 import Carousels from './Carousels.js';
@@ -37,9 +34,17 @@ class App extends React.Component {
       let baseOilList = this.state.oilData.filter(oil =>{
         return oil.level === 'base' && oil.mood === this.state.mood
       });
+      let midOilList = this.state.oilData.filter(oil => {
+        return oil.level === 'middle' && oil.mood === this.state.mood
+      })
+      let topOilList = this.state.oilData.filter(oil => {
+        return oil.level === 'top' && oil.mood === this.state.mood
+      })
       this.setState({ 
         baseLevel: baseOilList, 
-        currentLevel: "base"
+        currentLevel: true, 
+        midLevel: midOilList, 
+        topLevel: topOilList
       }, function () {
         console.log(this.state.mood)
       })
@@ -54,32 +59,15 @@ class App extends React.Component {
   }
 
 
-
-
-
-  // render() {
-      // return <h1 onClick={ this.handleMoodClick.bind(this) }>{ this.state.mood}</h1>
-      // console.log(this.state.mood)
-  // }
-  
-
-
   render() {
-    // if (this.state.currentLevel === null) {
-    //   var carousel = <div></div>
-    // } else {
-    //   var carousel = <Display />
-    // }
 
     return (
         <div>
           <Navbar />
           <Jumbotron handleMoodClick={this.handleMoodClick} />
-          <Display mood={this.state.mood} baseLevel={this.state.baseLevel} currentLevel={this.state.currentLevel}/>
-          {/* {this.state.currentLevel === null ? <div></div> : <Display baseLevel={this.state.baseLevel} mood={this.state.mood}/>} */}
-          {/* <Carousels mood={this.state.mood} level="base" handleClick={this.handleClick} oils={this.state.oilsData} /> */}
-          {/* <Carousels mood={this.state.mood} level="middle" handleClick={this.handleClick} oils={this.state.oilsData} /> */}
-          {/* <Carousels mood={this.state.mood} level="top" handleClick={this.handleClick} oils={this.state.oilsData} /> */}
+          <Carousels mood={this.state.mood} levelLabel="base" currentLevel={this.state.baseLevel}/>
+          <Carousels mood={this.state.mood} levelLabel="middle" currentLevel={this.state.midLevel}/>
+          <Carousels mood={this.state.mood} levelLabel="top" currentLevel={this.state.topLevel}/>
           <Calculation />
           <Footer />
         </div>
