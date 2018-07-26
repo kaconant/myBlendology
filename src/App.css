@@ -57,9 +57,9 @@ li.nav-item  a.nav-link:hover {
   } */
 
   @media (min-width: 451px){
-    .slider-btn {
+    /* .slider-btn {
       padding-bottom: 250px;
-    }
+    } */
 
     .arrow {
       position: relative;
@@ -121,20 +121,21 @@ li.nav-item  a.nav-link:hover {
       div.row.justify-content-center.info {
         padding: 0%;
         margin: 0%;
+        margin-bottom: 260px;
         position: relative;
         top: 770px;
         display: flex;
       }
       .cards-slider {
-        padding-top: 260px;
+        /* padding-top: 260px; */
         background-color: #f9f4f8;
       }
 }
 
 @media screen and (min-width: 0px) and (max-width: 450px){
-  .slider-btn {
+  /* .slider-btn {
     padding-bottom: 700px;
-  }
+  } */
   .arrow {
     position: relative;
     top: 60px;
@@ -206,12 +207,13 @@ li.nav-item  a.nav-link:hover {
     div.row.justify-content-center.info {
       padding: 0%;
       margin: 0%;
+      margin-bottom: 700px;
       position: relative;
       top: 650px;
       display: flex;
     }
     .cards-slider {
-      padding-top: 700px;
+      /* padding-top: 700px; */
       background-color: #f9f4f8;
     }
 }
