@@ -61,7 +61,7 @@ class App extends React.Component {
         <div>
           <Navbar />
           <Jumbotron handleMoodClick={this.handleMoodClick} />
-          {this.state.currentLevel !== null && <div className="buffer"></div>}
+          <div className="buffer"></div>
           {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="base" currentLevel={this.state.baseLevel} toShow={this.state.toShow} />}
           {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="middle" currentLevel={this.state.midLevel} toShow={this.state.toShow} />}
           {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="top" currentLevel={this.state.topLevel} toShow={this.state.toShow} />}

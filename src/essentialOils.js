@@ -251,7 +251,7 @@ export function EssentialOils() {
     },
   { 
         name: 'Cypress',
-        desc: 'This clear and fresh smelling essential oil is a great boon to use during times of major upheavals and changes in your life, as it restores calm, sooths anger and making your life flow better. It has a positive effect on excess fluids in general, thereby improving circulation, sorting out coughs and bronchitis. It assists with varicose veins and female problems and is definitely an oil to have around.',
+        desc: 'This clear and fresh smelling essential oil is a great boon to use during times of major upheavals and changes in your life, as it restores calm, sooths anger and making your life flow better. It has a positive effect on excess fluids in general, thereby improving circulation, sorting out coughs and bronchitis.',
         url: './img/oil-img/cypress.jpg',
         mood: 'awaken',
         level: "middle",
