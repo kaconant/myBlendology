@@ -28,15 +28,15 @@ class App extends React.Component {
     this.setState({
       mood: e.target.dataset.mood
     }, function() {
-      let baseOilList = this.state.oilData.filter(oil =>{
+      let baseOilList = this.state.oilData.filter(oil => {
         return oil.level === 'base' && oil.mood === this.state.mood
       });
       let midOilList = this.state.oilData.filter(oil => {
         return oil.level === 'middle' && oil.mood === this.state.mood
-      })
+      });
       let topOilList = this.state.oilData.filter(oil => {
         return oil.level === 'top' && oil.mood === this.state.mood
-      })
+      });
       this.setState({ 
         baseLevel: baseOilList, 
         midLevel: midOilList, 
