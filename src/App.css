@@ -638,3 +638,9 @@ li.nav-item  a.nav-link:hover {
     font-weight: 200;
     font-size: 18px;
 }
+
+img[alt=myBlendology] { width: 50%; height: 50%}
+
+img[alt=FrontView] { width: 50%; height: 50%}
+
+img[alt=Carousel] { width: 50%; height: 50%}

@@ -1,8 +1,10 @@
 ![myBlendology](https://github.com/kaconant/myBlendology/blob/master/public/img/logo.png) <!-- .element height="50%" width="50%" -->
 
+
 myBlendology is a web application comprised of a PERN stack (Postgres, Express, React, & NodeJS) that allows you to create diffuser essential oil blends based off of a user's choice of mood. 
 
-![frontView](https://github.com/kaconant/myBlendology/blob/master/public/img/readme-img/NavBar-Jumbotron.png) <!-- .element height="50%" width="50%" -->
+
+![FrontView](https://github.com/kaconant/myBlendology/blob/master/public/img/readme-img/NavBar-Jumbotron.png) <!-- .element height="50%" width="50%" -->
 
 ## The Approach
 
@@ -12,7 +14,9 @@ The user begins the application by selecting one of three moods: Calm, Awaken, o
 * Middle oils are considered the heart of your blend and will emerge after your top oil has faded. These oils often balance your blend and are typically well-rounded.
 * Top oils provide your first impression of your blend. These oils are often described as light and fresh, but tend to fade quickly.
 
+
 ![Carousel](https://github.com/kaconant/myBlendology/blob/master/public/img/readme-img/Carousels.png)<!-- .element height="50%" width="50%" -->
+
 
 ## Authors
 
