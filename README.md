@@ -17,6 +17,9 @@ The user begins the application by selecting one of three moods: Calm, Awaken, o
 
 ![Carousel](https://github.com/kaconant/myBlendology/blob/master/public/img/readme-img/Carousels.png)<!-- .element height="50%" width="50%" -->
 
+## The Result
+
+After the user selects one oil from each carousel, they will be provided the essential oil amount needed per oil to create the right balance for their mood blend. 
 
 ## Authors
 
@@ -29,5 +32,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Our instructors, Adam Szaruga and Lachlan Haywood, at DigitalCrafts
-* Create-React-App Developers
+* Our instructors, Adam Szaruga and Lachlan Haywood, at [DigitalCrafts](https://www.digitalcrafts.com/)
+* Create-React-App Developers at [Facebook](https://github.com/facebook/create-react-app)
