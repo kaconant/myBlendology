@@ -72,7 +72,7 @@ class Carousels extends Component {
                   <button className="slider-btn btn-l" onClick={() => this.handleClick('prev')}>&lt;</button>
                   <button className="slider-btn btn-r" onClick={() => this.handleClick('next')}>&gt;</button>
                 </div>
-                <Cards cardStyle={this.state.cardStyle} currentLevel={this.props.currentLevel} />
+                <Cards cardStyle={this.state.cardStyle} currentLevel={this.props.currentLevel} levelLabel={this.props.levelLabel}  />
               </div>
             </div>
           )   

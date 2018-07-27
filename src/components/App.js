@@ -19,7 +19,7 @@ class App extends React.Component {
         midLevel: [], 
         topLevel: [],
         oilData: EssentialOils(),
-        toShow: false
+        toShow: false,
     }
     this.handleMoodClick = this.handleMoodClick.bind(this);
   }
@@ -41,9 +41,9 @@ class App extends React.Component {
         baseLevel: baseOilList, 
         midLevel: midOilList, 
         topLevel: topOilList,
-        toShow: true 
+        toShow: true, 
       }, function () {
-        console.log(this.state.mood)
+        console.log("The Current Mood is: " + this.state.mood)
       })
   })
   }

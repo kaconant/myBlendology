@@ -3,34 +3,43 @@ import React from 'react';
 class Cards extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      selectedBaseLevel: " ",
+      selectedMidLevel: " ",
+      selectedTopLevel: " ", 
+    }
   }
-  handleBaseOilClick(e) {
+
+  
+  handleOilClick(e) {
     e.preventDefault();
-    this.setState({ 
-        baseLevel: e.currentTarget.dataset.name
+    let name = e.currentTarget.dataset.name;
+    
+    if (e.currentTarget.dataset.level === "base") {
+      name !== this.state.selectedBaseLevel ? e.target.className = 'checked' : e.target.className = "check";
+      this.setState({ 
+        selectedBaseLevel: (name === this.state.selectedBaseLevel ?  " " : name),
+      }, function () {
+        console.log("Base Oil is: " + this.state.selectedBaseLevel);
+      })
+    } else if (e.currentTarget.dataset.level === "middle") {
+      name !== this.state.selectedMidLevel ? e.target.className = 'checked' : e.target.className = "check";
+      this.setState({ 
+        selectedMidLevel: (this.state.isChecked === true ?  " " : name)
+      }, function () {
+        console.log("Mid Oil is: " + this.state.selectedMidLevel);
+      })
+    } else if (e.currentTarget.dataset.level === "top") {
+      name !== this.state.selectedTopLevel ? e.target.className = 'checked' : e.target.className = "check";
+      this.setState({ 
+        selectedTopLevel: (this.state.isChecked === true ?  " " : name),
+      }, function () {
+        console.log("Top Oil is: " + this.state.selectedTopLevel);
+      })
+    }
+  }
 
-    }, function () {
-    console.log(this.state.baseLevel);
-})
-}
 
-// handleMidOilClick(e) {
-//     // e.preventDefault();
-//     this.setState({ 
-//       midLevel: e.currentTarget.dataset.name
-//   }, function () {
-//   console.log(this.state.midLevel);
-// })
-// }
-
-// handleTopOilClick(e) {
-//     // e.preventDefault();
-//     this.setState({ 
-//       topLevel: e.currentTarget.dataset.name
-//   }, function () {
-//   console.log(this.state.topLevel);
-// })
-// }
 
   render() {
     let oilsArray = this.props.currentLevel;
@@ -38,13 +47,12 @@ class Cards extends React.Component {
         <section>
           {
           oilsArray.map((card, i) => {
-            let url = card.url
             return (
-              <div className="card" id="card" data-name={card.name}  style={this.props.cardStyle} onClick={this.handleBaseOilClick.bind(this)}key={i}>
-                <a href="#"><img className="oil-photo" src={card.url} height='200' /></a>
+              <div className="card" id="card"  style={this.props.cardStyle}  key={i}>
+                <img className="oil-photo" src={card.url} height='200' />
                 <p className="title">{card.name}</p>
                 <p className="desc">{card.desc}</p>
-                <a href="#"><div className="check"></div></a>
+                <div className="check" data-name={card.name}  data-level={this.props.levelLabel} onClick={this.handleOilClick.bind(this)}></div>
               </div>
             )
           })
