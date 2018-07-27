@@ -18,17 +18,17 @@ class Jumbotron extends Component {
               </div>
               <div className="row flex-row justify-content-center info">
                 <div className="main-col">
-                  <img src='./img/click.png' height="40" />
+                  <img src='./img/click2.png' height="40" />
                   <span className='info-header'>Choose</span>
                   <span className="info-blurb">Whatever mood or needs you're feeling today, just choose it. Use the descriptions of each oil to guide you.</span>
                 </div>
                 <div className="main-col">
-                  <img src='./img/fingerprint.png' height="40" />
+                  <img src='./img/fingerprint2.png' height="40" />
                   <span className='info-header'>Create</span>
                   <span className="info-blurb">Once you've chosen a direction and your oils, we will create a blend that is as unique as you are.</span>
                 </div>
                 <div className="main-col">
-                  <img src='./img/love.png' height="40" />
+                  <img src='./img/love2.png' height="40" />
                   <span className='info-header'>Enjoy</span>
                   <span className="info-blurb">After you've mixed your oils, grab your crystals, and enjoy your unique blend. Namaste!</span>
                 </div>
