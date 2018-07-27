@@ -16,7 +16,7 @@ class Carousels extends Component {
 
   
     componentDidMount() {
-      this.setState({ width: 300 })
+      this.setState({ width: 250 })
     }
   
     // func: click the slider buttons
@@ -24,7 +24,7 @@ class Carousels extends Component {
       // get the card's margin-right
       let oilsArray = this.props.currentLevel;
       const cardWidth = this.state.width; // the card's width
-      const cardMargin = 15; // the card's margin
+      const cardMargin = 20; // the card's margin
       const cardNumber = oilsArray.length; // the number of cards
       let currentCard = this.state.currentCard; // the index of the current card
       let position = this.state.position; // the position of the cards
