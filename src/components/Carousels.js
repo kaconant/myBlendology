@@ -5,36 +5,33 @@ class Carousel extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        currentCard: 0,
-        position: 0,
-        cardStyle: {
-          transform: 'translateX(0px)'
+        slider : {
+          currentCard: 0,
+          position: 0,
+          cardStyle: {
+            transform: 'translateX(0px)'
+          },
+          width: 250,
         },
-        width: 0,
-        selectedOils: [],
+        currentOil: '',
       };
-    }
-
-
-    componentDidMount() {
-      this.setState({ width: 300 })
     }
 
     toggleOil(oilName) {
       const state = { ...this.state };
-      state[this.props.levelLabel] = oilName; // i.e. state.middle = oilName;
+      state.currentOil = oilName; // i.e. state.middle = oilName;
+      const level = this.props.levelLabel;
       this.setState(state);
+      this.props.setOil(level, oilName);
     }
-
-
     // func: click the slider buttons
     handleClick(type) {
       let oilsArray = this.props.currentLevel;
-      const cardWidth = this.state.width; // the card's width
-      const cardMargin = 15; // the card's margin
+      const cardWidth = this.state.slider.width; // the card's width
+      const cardMargin = 20; // the card's margin
       const cardNumber = oilsArray.length; // the number of cards
-      let currentCard = this.state.currentCard; // the index of the current card
-      let position = this.state.position; // the position of the cards
+      let currentCard = this.state.slider.currentCard; // the index of the current card
+      let position = this.state.slider.position; // the position of the cards
 
       // slide cards
       if(type === 'next' && currentCard < cardNumber-1) {
@@ -49,10 +46,12 @@ class Carousel extends Component {
 
     setCard(currentCard, position) {
       this.setState({
-        currentCard: currentCard,
-        position: position,
-        cardStyle: {
-          transform: `translateX(${position}px)`
+        slider: {
+          currentCard: currentCard,
+          position: position,
+          cardStyle: {
+            transform: `translateX(${position}px)`
+          }
         }
       })
     }
@@ -72,21 +71,20 @@ class Carousel extends Component {
         }
       return (
         <div id="base">
-              {this.props.toShow === true && <div className="info-label">{infoLabel}</div>}
-              {this.props.toShow === true && <div className="info-blurb-level">{infoBlurb}</div>}
-            <div className="cards-slider">
-
-            <div className="slider-btns">
-              <button className="slider-btn btn-l" onClick={() => this.handleClick('prev')}>&lt;</button>
-              <button className="slider-btn btn-r" onClick={() => this.handleClick('next')}>&gt;</button>
-            </div>
-            <section style={this.state.cardStyle}>
-            {
-              this.props.currentLevel.map((card, i) => (
-                <Card content={card} checked={this.state[this.props.levelLabel] === card.name} toggleOil={this.toggleOil.bind(this)} key={i} />
-              ))
-            }
-            </section>
+            {this.props.toShow === true && <div className="info-label">{infoLabel}</div>}
+            {this.props.toShow === true && <div className="info-blurb-level">{infoBlurb}</div>}
+          <div className="cards-slider">
+          <div className="slider-btns">
+            <button className="slider-btn btn-l" onClick={() => this.handleClick('prev')}>&lt;</button>
+            <button className="slider-btn btn-r" onClick={() => this.handleClick('next')}>&gt;</button>
+          </div>
+          <section style={this.state.slider.cardStyle}>
+          {
+            this.props.currentLevel.map((card, i) => (
+              <Card content={card} checked={this.state.currentOil === card.name} toggleOil={this.toggleOil.bind(this)} key={i} />
+            ))
+          }
+          </section>
           </div>
         </div>
       )
