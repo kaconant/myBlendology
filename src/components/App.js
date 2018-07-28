@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import Navbar from './Navbar.js';
 import Jumbotron from './Jumbotron.js';
-import Carousels from './Carousels.js';
+import Carousel from './Carousels.js';
 import Calculation from './Calculation.js'
 import Footer from './Footer.js';
 import { EssentialOils } from '../essentialOils';
@@ -19,6 +19,11 @@ class App extends React.Component {
         midLevel: [], 
         topLevel: [],
         oilData: EssentialOils(),
+        selected: {
+          base: '',
+          middle: '',
+          top: '',
+        },
         toShow: false,
     }
     this.handleMoodClick = this.handleMoodClick.bind(this);
@@ -48,6 +53,12 @@ class App extends React.Component {
   })
   }
 
+  setOil(level, oil) {
+    let state = { ...this.state };
+    state.selected[level] = oil;
+    this.setState(state);
+  }
+
   // componentDidMount() {
   //   let oilData = EssentialOils();
   //   this.setState({
@@ -62,10 +73,10 @@ class App extends React.Component {
           <Navbar />
           <Jumbotron handleMoodClick={this.handleMoodClick} />
           <div className="buffer"></div>
-          {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="base" currentLevel={this.state.baseLevel} toShow={this.state.toShow} />}
-          {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="middle" currentLevel={this.state.midLevel} toShow={this.state.toShow} />}
-          {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="top" currentLevel={this.state.topLevel} toShow={this.state.toShow} />}
-          <Calculation />
+          {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="base" currentLevel={this.state.baseLevel} toShow={this.state.toShow} />}
+          {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="middle" currentLevel={this.state.midLevel} toShow={this.state.toShow} />}
+          {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="top" currentLevel={this.state.topLevel} toShow={this.state.toShow} />}
+          <Calculation selected={this.state.selected} />
           <Footer />
         </div>
     )
