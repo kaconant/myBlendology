@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import Navbar from './Navbar.js';
 import Jumbotron from './Jumbotron.js';
-import Carousels from './Carousels.js';
+import Carousel from './Carousels.js';
 import Calculation from './Calculation.js'
 import Footer from './Footer.js';
 import { EssentialOils } from '../essentialOils';
@@ -62,9 +62,9 @@ class App extends React.Component {
           <Navbar />
           <Jumbotron handleMoodClick={this.handleMoodClick} />
           <div className="buffer"></div>
-          {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="base" currentLevel={this.state.baseLevel} toShow={this.state.toShow} />}
-          {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="middle" currentLevel={this.state.midLevel} toShow={this.state.toShow} />}
-          {this.state.toShow !== false && <Carousels mood={this.state.mood} levelLabel="top" currentLevel={this.state.topLevel} toShow={this.state.toShow} />}
+          {this.state.toShow !== false && <Carousel mood={this.state.mood} levelLabel="base" currentLevel={this.state.baseLevel} toShow={this.state.toShow} />}
+          {this.state.toShow !== false && <Carousel mood={this.state.mood} levelLabel="middle" currentLevel={this.state.midLevel} toShow={this.state.toShow} />}
+          {this.state.toShow !== false && <Carousel mood={this.state.mood} levelLabel="top" currentLevel={this.state.topLevel} toShow={this.state.toShow} />}
           <Calculation />
           <Footer />
         </div>
