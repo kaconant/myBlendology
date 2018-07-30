@@ -4,6 +4,7 @@ import Navbar from './Navbar.js';
 import Jumbotron from './Jumbotron.js';
 import Carousel from './Carousels.js';
 import Calculation from './Calculation.js'
+import Modal from './Modal';
 import Footer from './Footer.js';
 import { EssentialOils } from '../essentialOils';
 
@@ -21,8 +22,11 @@ class App extends React.Component {
         oilData: EssentialOils(),
         selected: {
           base: '',
+          baseDesc: '',
           middle: '',
+          middleDesc: '',
           top: '',
+          topDesc: ''
         },
         toShow: false,
     }
@@ -59,12 +63,6 @@ class App extends React.Component {
     this.setState(state);
   }
 
-  // componentDidMount() {
-  //   let oilData = EssentialOils();
-  //   this.setState({
-  //     oilData
-  //   })
-  // }
 
 
   render() {
@@ -76,7 +74,8 @@ class App extends React.Component {
           {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="base" currentLevel={this.state.baseLevel} toShow={this.state.toShow} />}
           {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="middle" currentLevel={this.state.midLevel} toShow={this.state.toShow} />}
           {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="top" currentLevel={this.state.topLevel} toShow={this.state.toShow} />}
-          <Calculation selected={this.state.selected} />
+          <Calculation selected={this.state.selected} toShow={this.state.toShow}/>
+          <Modal />
           <Footer />
         </div>
     )
