@@ -21,13 +21,16 @@ class Modal extends React.Component {
                                         <div className="form-group">
                                             <input type="text" className="form-control-form " id="signup-name" placeholder="Your Name" />                                            </div>
                                         <div className="form-group">
-                                            <input type="text" className="form-control-form " id="blend-name" placeholder="Name Your Blend" />
+                                            <input type="text" className="form-control-form " id="blend-name" placeholder="Name of Your Blend" />
                                         </div>
                                         <div className="checkbox">
                                             <label>
-                                                <input id="remember-me" type="checkbox" /> Remember Me 
+                                                <input id="remember-me" type="checkbox" />Remember Me 
                                             </label>
                                         </div>   
+                                        <div className="form-group">
+                                            <input type="text" className="form-control-form " id="recName" placeholder="Recepient's Name" />
+                                        </div>
                                         <div id="vehicle-info">
                                             <div className="form-group">
                                                 <input type="text" className="form-control-form " id="recEmail" placeholder="Recepient's Email" />
@@ -36,9 +39,6 @@ class Modal extends React.Component {
                                                 
                                             </div>
                                         </div>  
-                                        <div className="form-group">
-                                            <input type="text" className="form-control-form " id="message" placeholder="Message" />
-                                        </div>
                             
                                         <p>    By sharing my blends, I agree to Blendology's <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>. </p>
                                         <div className="row">   
