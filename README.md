@@ -14,12 +14,15 @@ The user begins the application by selecting one of three moods: Calm, Awaken, o
 * Middle oils are considered the heart of your blend and will emerge after your top oil has faded. These oils often balance your blend and are typically well-rounded.
 * Top oils provide your first impression of your blend. These oils are often described as light and fresh, but tend to fade quickly.
 
-
 ![Carousel](https://github.com/kaconant/myBlendology/blob/master/public/img/readme-img/Carousels.png)<!-- .element height="50%" width="50%" -->
 
 ## The Result
 
 After the user selects one oil from each carousel, they will be provided the essential oil amount needed per oil to create the right balance for their mood blend. 
+
+## Back-End
+
+[oils-api](https://github.com/kaconant/oils-api)
 
 ## Authors
 
