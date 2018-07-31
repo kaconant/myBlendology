@@ -591,8 +591,59 @@ body {
     margin: 20px 35px;
   }
 
+  .calcIntro {
+    text-align: center;
+    color: rgb(48, 45, 71);
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+
   .calcOils {
     text-align: center;
+    color: rgb(48, 45, 71);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+
+  .calcColor {
+    color: rgba(132, 153, 104, 0.87)
+  }
+
+/* Modal */
+
+  .modal-content {
+  background-color: rgba(245, 245, 245, 0.95);
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .modalBtn {
+    position: relative;
+    top: 10px;
+    width: 250px;
+    height: 48px;
+    padding: 14px 35px 12px 35px;
+    color: whitesmoke;
+    /* border: 3px solid rgba(245, 245, 245, 0.8); */
+    text-decoration: none;
+    line-height: 120%;
+    background-color: rgba(70, 66, 110, 0.863);
+    text-align: center;
+    border-radius: 50px;
+    transition: all 400ms ease;
+    transition-property: background-color, border;
+    cursor: pointer;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 20px 35px;
   }
 
 /* Footer */
