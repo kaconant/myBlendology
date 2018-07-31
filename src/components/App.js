@@ -22,11 +22,8 @@ class App extends React.Component {
         oilData: EssentialOils(),
         selected: {
           base: '',
-          baseDesc: '',
           middle: '',
-          middleDesc: '',
           top: '',
-          topDesc: ''
         },
         toShow: false,
     }
@@ -63,8 +60,6 @@ class App extends React.Component {
     this.setState(state);
   }
 
-
-
   render() {
     return (
         <div>
@@ -74,8 +69,8 @@ class App extends React.Component {
           {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="base" currentLevel={this.state.baseLevel} toShow={this.state.toShow} />}
           {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="middle" currentLevel={this.state.midLevel} toShow={this.state.toShow} />}
           {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="top" currentLevel={this.state.topLevel} toShow={this.state.toShow} />}
-          <Calculation selected={this.state.selected} toShow={this.state.toShow}/>
-          <Modal />
+          <Calculation selected={this.state.selected} toShow={this.state.toShow} />
+          <Modal selected={this.state.selected} />
           <Footer />
         </div>
     )
