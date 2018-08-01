@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 class Modal extends React.Component {
+    
     state = {
         submitted: false
     }
@@ -36,6 +37,12 @@ class Modal extends React.Component {
             console.log(error);
         })
     }
+    // clearModal() {
+    //     document.getElementById("userName").reset(),
+    //     document.getElementById("blendName").reset(),
+    //     document.getElementById("recName").reset(),
+    //     document.getElementById("recEmail").reset()
+    // }
 
     render() {
         return (
