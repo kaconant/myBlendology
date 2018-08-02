@@ -27,7 +27,7 @@ class Carousel extends Component {
     // func: click the slider buttons
     handleClick(type) {
       let oilsArray = this.props.currentLevel;
-      const cardWidth = this.state.slider.width; // the card's width
+      const cardWidth = 250; // the card's width
       const cardMargin = 20; // the card's margin
       const cardNumber = oilsArray.length; // the number of cards
       let currentCard = this.state.slider.currentCard; // the index of the current card

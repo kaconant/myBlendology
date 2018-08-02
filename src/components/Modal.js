@@ -35,19 +35,20 @@ class Modal extends React.Component {
         .catch((error) => {
             alert('Try again later!')
             console.log(error);
-        })
+        }); 
+
+        setTimeout(this.clearModal, 2000);
     }
-    // clearModal() {
-    //     document.getElementById("userName").reset(),
-    //     document.getElementById("blendName").reset(),
-    //     document.getElementById("recName").reset(),
-    //     document.getElementById("recEmail").reset()
-    // }
+
+    clearModal() {
+        document.getElementById("formInfo").reset();
+        
+    }
 
     render() {
         return (
             <div>
-                <form action="/login" method="GET">
+                <form action="/login" method="GET" id="modalDiv">
                     <div className="modal fade" id="share" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel">
                         <div className="modal-dialog" role="document">
                             <div className="modal-content">
@@ -56,7 +57,7 @@ class Modal extends React.Component {
                                     <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                 </div>
                                 <div className="modal-body">
-                                    <form onSubmit={this.handleSubmit.bind(this)}>
+                                    <form onSubmit={this.handleSubmit.bind(this)} id="formInfo">
                                         <div className="form-group">
                                             <input type="text" className="form-control-form " required id="userName" name="userName" placeholder="Your Name" />                                            
                                         </div>
