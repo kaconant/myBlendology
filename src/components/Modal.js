@@ -4,13 +4,24 @@ import axios from 'axios';
 class Modal extends React.Component {
     
     state = {
-        submitted: false
+        submitted: false,
+        isModalOpen: false
+    }
+
+    clearModal() {
+        document.getElementById("formInfo").reset(),
+        window.close();
+    }
+
+    close(){
+        this.setState({ showModal: false });
     }
 
     handleSubmit(e) {
         e.preventDefault();
         this.setState({
-            submitted: true
+            submitted: true,
+            isModalOpen: true,
         })
         const oils = {
             top: this.props.selected.top,
@@ -24,25 +35,22 @@ class Modal extends React.Component {
             blendName: e.target.blendName.value,
             recName: e.target.recName.value,
             recEmail: e.target.recEmail.value,
-            oils: oils
+            oils: oils,
         })
         .then((response) => {
             this.setState({
-                submitted: false
+                submitted: false,
+                isModalOpen: false
             })
             console.log('the modal will close now');
+            
         })
         .catch((error) => {
             alert('Try again later!')
             console.log(error);
         }); 
-
-        setTimeout(this.clearModal, 2000);
-    }
-
-    clearModal() {
-        document.getElementById("formInfo").reset();
-        
+      
+        setTimeout(this.clearModal, 1000);
     }
 
     render() {
@@ -81,7 +89,7 @@ class Modal extends React.Component {
                                         {this.state.submitted ? (
                                             <button type="submit" className="modalBtn" id="signup-button" disabled="disabled" >Submitted</button> 
                                         ) : (
-                                            <button type="submit" className="modalBtn" id="signup-button">Share Now</button>
+                                            <button type="submit" className="modalBtn" id="signup-button" >Share Now</button>
                                         )}
                                     </form>
                                 </div>

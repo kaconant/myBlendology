@@ -70,7 +70,7 @@ class App extends React.Component {
           {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="middle" currentLevel={this.state.midLevel} toShow={this.state.toShow} />}
           {this.state.toShow !== false && <Carousel mood={this.state.mood} setOil={this.setOil.bind(this)} levelLabel="top" currentLevel={this.state.topLevel} toShow={this.state.toShow} />}
           <Calculation selected={this.state.selected} toShow={this.state.toShow} />
-          <Modal selected={this.state.selected} />
+          <Modal selected={this.state.selected} mood={this.state.mood}/>
           <Footer />
         </div>
     )
