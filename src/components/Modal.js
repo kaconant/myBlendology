@@ -48,17 +48,15 @@ class Modal extends React.Component {
         .catch((error) => {
             alert('Try again later!')
             console.log(error);
-        });
-
+        }); 
+      
         setTimeout(this.clearModal, 1000);
-
-
     }
 
     render() {
         return (
             <div>
-                <form action="/login" method="GET">
+                <form action="/login" method="GET" id="modalDiv">
                     <div className="modal fade" id="share" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel">
                         <div className="modal-dialog" role="document">
                             <div className="modal-content">
