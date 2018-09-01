@@ -1,7 +1,7 @@
 ![myBlendology](https://github.com/kaconant/myBlendology/blob/master/public/img/logo.png) <!-- .element height="50%" width="50%" -->
 
 
-myBlendology is a web application comprised of a PERN stack (Postgres, Express, React, & NodeJS) that allows you to create diffuser essential oil blends based off of a user's choice of mood. 
+myBlendology is a web application comprised of a PERN stack (Postgres, Express, React, & Node.js) that allows you to create diffuser essential oil blends based off of a user's choice of mood. 
 
 
 ![FrontView](https://github.com/kaconant/myBlendology/blob/master/public/img/readme-img/NavBar-Jumbotron.png) <!-- .element height="50%" width="50%" -->
